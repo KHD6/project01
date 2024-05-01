@@ -47,6 +47,7 @@ $(document).ready(function(){//시작
   var swiper = new Swiper(".txt-Swiper", {
     loop: true,
     slidesPerView: 3,
+    spaceBetween: 20,
     freeMode: true,
     watchSlidesProgress: true,
   });

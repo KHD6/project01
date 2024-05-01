@@ -2,7 +2,7 @@
 
 /*Mobile 기준*/
 .inner{margin: 0 auto; max-width: 400px;}
-#section .inner{padding: 10px;}
+section .inner{padding: 10px;}
 header{position: fixed; width: 100%; height: 70px; z-index: 999; background-color: #fff;}
 header .inner > h1 img:nth-of-type(1){width: 70px; height: 70px; position: absolute; top: 0; left: 20px;}
 header .inner > h1 img:nth-of-type(2){width: 168px; height: 40px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
@@ -79,10 +79,12 @@ header .inner > h1 img:nth-of-type(2){width: 168px; height: 40px; position: abso
 
 #introduce .txt-Swiper::before{content: ""; display: block; height: 2px; background-color: #3a4364; margin-bottom: 20px;}
 #introduce .txt-Swiper::after{content: ""; display: block; height: 2px; background-color: #3a4364; margin: 20px 0 20px;}
-#introduce .txt-Swiper ul li{text-align: center;}
-#introduce .txt-Swiper ul li a{font-size: 14px; color: #81BF25; border: 2px solid #81BF25; background-color: #fff; border-radius: 22px; padding: 10px 20px; transition: all 0.3s;}
-#introduce .txt-Swiper ul li:hover a{color: #fff; background-color: #81BF25;}
-#introduce .txt-Swiper ul li.swiper-slide-thumb-active a{color: #fff; background-color: #81BF25;}
+#introduce .txt-Swiper ul li{text-align: center; border: 2px solid #81BF25; background-color: #fff; border-radius: 22px; padding: 5px 10px; }
+#introduce .txt-Swiper ul li:hover{color: #fff; background-color: #81BF25;}
+#introduce .txt-Swiper ul li a{font-size: 14px; color: #81BF25;transition: all 0.3s;}
+
+#introduce .txt-Swiper ul li.swiper-slide-thumb-active {background-color: #81BF25;}
+#introduce .txt-Swiper ul li.swiper-slide-thumb-active a{color: #fff;}
 
 #introduce .btn-box{display: flex; justify-content: space-between;}
 #introduce .btn{font-size: 14px; color: #81BF25; border: 2px solid #81BF25; background-color: #fff; border-radius: 22px; padding: 10px 20px; width: 175px; display: block; text-align: center;background-repeat: no-repeat; background-position: 85%; transition: all 0.3s;}
