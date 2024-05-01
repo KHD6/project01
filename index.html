@@ -3,9 +3,799 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>파일 업로드 테스트</title>
+  <title>마리앤쥬</title>
+  <!--favicon-->
+  <link rel="icon" type="image/png" sizes="48x48" href="img/favicon.png">
+  
+  <!--css-->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/fullpage.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/ani.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <!--js-->
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/fullpage.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/common.js"></script>
 </head>
 <body>
-  파일업로드 테스트
+  <div id="wrap">
+    <header>
+      <div class="inner">
+        <h1>
+          <a href="#">
+            <img src="img/logo_img.png" alt="매리앤쥬 로고">
+            <img src="img/logo_txt.png" alt="마리앤쥬">
+          </a>
+        </h1>
+
+        <nav class="pc-gnb"><!--PC 메뉴-->
+          <ul class="gnb">
+            <li>
+              <div class="depth1"><a href="#">소개</a></div>
+              <ul class="depth2">
+                <li><a href="#">마리앤쥬는</a></li>
+                <li><a href="#">매체소개</a></li>
+              </ul><!--.depth2-->
+            </li>
+            <li>
+              <div class="depth1"><a href="#">수입/분양</a></div>
+              <ul class="depth2">
+                <li><a href="#">동물분양안내</a></li>
+                <li><a href="#">분양하는 동물</a></li>
+                <li><a href="#">분양 공지</a></li>
+              </ul><!--.depth2-->
+            </li>
+            <li>
+              <div class="depth1"><a href="#">매장이용</a></div>
+              <ul class="depth2">
+                <li><a href="#">실내동물원</a></li>
+                <li><a href="#">실내/실외</a></li>
+              </ul><!--.depth2-->
+            </li>
+            <li>
+              <div class="depth1"><a href="#">커뮤니티</a></div>
+              <ul class="depth2">
+                <li><a href="#">일상이야기</a></li>
+                <li><a href="#">동물수업</a></li>
+              </ul><!--.depth2-->
+            </li>
+            <li>
+              <div class="depth1"><a href="#">오시는 길</a></div>
+              <ul class="depth2">
+                <li><a href="#">인천점</a></li>
+                <li><a href="#">대전점</a></li>
+                <li><a href="#">부산점</a></li>
+              </ul><!--.depth2-->
+            </li>
+            <li>
+              <div class="depth1"><a href="#">Q&A</a></div>
+            </li>
+          </ul><!--.gnb-->
+        </nav><!--.pc-gnb-->
+
+        <div class="btn-open"><a href="#" class="hidden">열기버튼</a></div><!--.btn-open-->
+
+        <div class="m-wrap"><!--모바일 메뉴-->
+          <h1><img src="img/logo_txt.png" alt="마리앤쥬 로고"></h1>
+
+          <div class="btn-close"><a href="#" class="hidden">닫기버튼</a></div><!--.btn-close-->
+
+          <nav><!--모바일 nav-->
+            <ul class="gnb m-gnb">
+              <li>
+                <div class="depth1"><a href="#">소개</a></div>
+                <ul class="depth2">
+                  <li><a href="#">마리앤쥬는</a></li>
+                  <li><a href="#">매체소개</a></li>
+                </ul><!--.depth2-->
+              </li>
+              <li>
+                <div class="depth1"><a href="#">수입/분양</a></div>
+                <ul class="depth2">
+                  <li><a href="#">동물분양안내</a></li>
+                  <li><a href="#">분양하는 동물</a></li>
+                  <li><a href="#">분양 공지</a></li>
+                </ul><!--.depth2-->
+              </li>
+              <li>
+                <div class="depth1"><a href="#">매장이용</a></div>
+                <ul class="depth2">
+                  <li><a href="#">실내동물원</a></li>
+                  <li><a href="#">실내/실외</a></li>
+                </ul><!--.depth2-->
+              </li>
+              <li>
+                <div class="depth1"><a href="#">커뮤니티</a></div>
+                <ul class="depth2">
+                  <li><a href="#">일상이야기</a></li>
+                  <li><a href="#">동물수업</a></li>
+                </ul><!--.depth2-->
+              </li>
+              <li>
+                <div class="depth1"><a href="#">오시는 길</a></div>
+                <ul class="depth2">
+                  <li><a href="#">인천점</a></li>
+                  <li><a href="#">대전점</a></li>
+                  <li><a href="#">부산점</a></li>
+                </ul><!--.depth2-->
+              </li>
+              <li>
+                <div class="depth1"><a href="#">Q&A</a></div>
+              </li>
+            </ul><!--.gnb .m-gnb-->
+
+            <ul class="m-sns">
+              <li><a href="#" class="hidden">전화</a></li>
+              <li><a href="#" class="hidden">톡</a></li>
+              <li><a href="#" class="hidden">트위터</a></li>
+              <li><a href="#" class="hidden">페이스북</a></li>
+              <li><a href="#" class="hidden">인스타그렘</a></li>
+              <li><a href="#" class="hidden">위치</a></li>
+            </ul><!--.m-sns-->
+          </nav>
+        </div><!--.m-gnb-wrap-->
+
+
+      </div><!--.inner-->
+    </header>
+
+    <section id="fullpage">
+
+      <section class="section" id="visual">
+        <div class="img-box">
+          <div class="inner">
+            <div class="txt-box">
+              <h2>사람과 동물이 함께 어우러지는 특별한 교감공간</h2>
+              <p>
+                어디에도 없었던<br>
+                특별한 경험을 선물합니다
+              </p>
+            </div><!--.txt-box-->
+          </div><!--.inner-->
+        </div><!--.img-box-->
+
+      </section><!--#visual-->
+
+      <section class="section fp-overflow" id="introduce">
+        <div class="inner">
+          <h2>
+            <span class="tit-color01">동물</span><span class="tit-color02">소</span><span class="tit-color03">개</span>
+          </h2>
+            <!-------------------------------------모바일 img-box 시작----------------------------------------------------->
+            <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper m-img-box">
+
+              <ul class="swiper-wrapper m-con">
+                <li class="swiper-slide">
+                  <a href="#"><img src="img/animal/dog.jpg" alt="강아지"></a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#"><img src="img/animal/turtle.jpg" alt="거북이"></a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#"><img src="img/animal/hedgehog.jpg" alt="고슴도치"></a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#"><img src="img/animal/cat.jpg" alt="고양이"></a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#"><img src="img/animal/guinea_pig.jpg" alt="기니피그"></a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#"><img src="img/animal/squirrel.jpg" alt="다람쥐"></a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#"><img src="img/animal/pig.jpg" alt="돼지"></a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#"><img src="img/animal/Raccoon.jpg" alt="라쿤"></a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#"><img src="img/animal/meerkat.jpg" alt="미어캣"></a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#"><img src="img/animal/mink.jpg" alt="밍크"></a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#"><img src="img/animal/snake.jpg" alt="뱀"></a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#"><img src="img/animal/skunk.jpg" alt="스컹크"></a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#"><img src="img/animal/sugar_glider.jpg" alt="슈가 글라이더"></a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#"><img src="img/animal/alpaca.jpg" alt="알파카"></a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#"><img src="img/animal/badger.jpg" alt="오소리"></a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#"><img src="img/animal/wallaby.jpg" alt="왈라비"></a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#"><img src="img/animal/fox.jpg" alt="여우"></a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#"><img src="img/animal/parrot.png" alt="앵무새"></a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#"><img src="img/animal/rabbit.jpg" alt="토끼"></a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#"><img src="img/animal/ferret.jpg" alt="페럿"></a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#"><img src="img/animal/prairie_dog.jpg" alt="프레리도그"></a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#"><img src="img/animal/gerbil.jpg" alt="저빌"></a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#"><img src="img/animal/chinchilla.jpg" alt="친칠라"></a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#"><img src="img/animal/Capybara.jpg" alt="카피바라"></a>
+                </li>
+              </ul>
+            </div>
+            <div thumbsSlider="" class="swiper txt-Swiper">
+              <ul class="swiper-wrapper swiperbar">
+                <li class="swiper-slide"><a href="#">강아지</a></li>
+                <li class="swiper-slide"><a href="#">거북이</a></li>
+                <li class="swiper-slide"><a href="#">고슴도치</a></li>
+                <li class="swiper-slide"><a href="#">고양이</a></li>
+                <li class="swiper-slide"><a href="#">기니피그</a></li>
+                <li class="swiper-slide"><a href="#">다람쥐</a></li>
+                <li class="swiper-slide"><a href="#">돼지</a></li>
+                <li class="swiper-slide"><a href="#">라쿤</a></li>
+                <li class="swiper-slide"><a href="#">미어캣</a></li>
+                <li class="swiper-slide"><a href="#">밍크</a></li>
+                <li class="swiper-slide"><a href="#">뱀</a></li>
+                <li class="swiper-slide"><a href="#">스컹크</a></li>
+                <li class="swiper-slide"><a href="#">슈가글라이더</a></li>
+                <li class="swiper-slide"><a href="#">알파카</a></li>
+                <li class="swiper-slide"><a href="#">오소리</a></li>
+                <li class="swiper-slide"><a href="#">왈라비</a></li>
+                <li class="swiper-slide"><a href="#">여우</a></li>
+                <li class="swiper-slide"><a href="#">앵무새</a></li>
+                <li class="swiper-slide"><a href="#">토끼</a></li>
+                <li class="swiper-slide"><a href="#">페럿</a></li>
+                <li class="swiper-slide"><a href="#">프레리도그</a></li>
+                <li class="swiper-slide"><a href="#">저빌</a></li>
+                <li class="swiper-slide"><a href="#">친칠라</a></li>
+                <li class="swiper-slide"><a href="#">카피바라</a></li>   
+              </ul>
+            </div>
+
+            <!-------------------------------------모바일 img-box 끝----------------------------------------------------->
+
+          <ul class="tab-menu pc-slide">
+            <li class="on"><a href="#">강아지</a></li>
+            <li><a href="#">거북이</a></li>
+            <li><a href="#">고슴도치</a></li>
+            <li><a href="#">고양이</a></li>
+            <li><a href="#">기니피그</a></li>
+            <li><a href="#">다람쥐</a></li>
+            <li><a href="#">돼지</a></li>
+            <li><a href="#">라쿤</a></li>
+            <li><a href="#">미어캣</a></li>
+            <li><a href="#">밍크</a></li>
+            <li><a href="#">뱀</a></li>
+            <li><a href="#">스컹크</a></li>
+            <li><a href="#">슈가글라이더</a></li>
+            <li><a href="#">알파카</a></li>
+            <li><a href="#">오소리</a></li>
+            <li><a href="#">왈라비</a></li>
+            <li><a href="#">여우</a></li>
+            <li><a href="#">앵무새</a></li>
+            <li><a href="#">토끼</a></li>
+            <li><a href="#">페럿</a></li>
+            <li><a href="#">프레리도그</a></li>
+            <li><a href="#">저빌</a></li>
+            <li><a href="#">친칠라</a></li>
+            <li><a href="#">카피바라</a></li>
+          </ul><!--.tab-menu .pc-slide-->
+          
+          <div class="pc-img-box">
+            <div class="tab-cont">
+              <a href="#">
+                <img src="img/animal/dog.jpg" alt="강아지">
+              </a>
+            </div>
+            <div class="tab-cont">
+              <a href="#">
+                <img src="img/animal/turtle.jpg" alt="거북이">
+              </a>
+            </div>
+            <div class="tab-cont">
+              <a href="#">
+                <img src="img/animal/hedgehog.jpg" alt="고슴도치">
+              </a>
+            </div>
+            <div class="tab-cont">
+              <a href="#">
+                <img src="img/animal/cat.jpg" alt="고양이">
+              </a>
+            </div>
+            <div class="tab-cont">
+              <a href="#">
+                <img src="img/animal/guinea_pig.jpg" alt="기니피그">
+              </a>
+            </div>
+            <div class="tab-cont">
+              <a href="#">
+                <img src="img/animal/squirrel.jpg" alt="다람쥐">
+              </a>
+            </div>
+            <div class="tab-cont">
+              <a href="#">
+                <img src="img/animal/pig.jpg" alt="돼지">
+              </a>
+            </div>
+            <div class="tab-cont">
+              <a href="#">
+                <img src="img/animal/Raccoon.jpg" alt="라쿤">
+              </a>
+            </div>
+            <div class="tab-cont">
+              <a href="#">
+                <img src="img/animal/meerkat.jpg" alt="미어캣">
+              </a>
+            </div>
+            <div class="tab-cont">
+              <a href="#">
+                <img src="img/animal/mink.jpg" alt="밍크">
+              </a>
+            </div>
+            <div class="tab-cont">
+              <a href="#">
+                <img src="img/animal/snake.jpg" alt="뱀">
+              </a>
+            </div>
+            <div class="tab-cont">
+              <a href="#">
+                <img src="img/animal/skunk.jpg" alt="스컹크">
+              </a>
+            </div>
+            <div class="tab-cont">
+              <a href="#">
+                <img src="img/animal/sugar_glider.jpg" alt="슈가 글라이더">
+              </a>
+            </div>
+            <div class="tab-cont">
+              <a href="#">
+                <img src="img/animal/alpaca.jpg" alt="알파카">
+              </a>
+            </div>
+            <div class="tab-cont">
+              <a href="#">
+                <img src="img/animal/badger.jpg" alt="오소리">
+              </a>
+            </div>
+            <div class="tab-cont">
+              <a href="#">
+                <img src="img/animal/wallaby.jpg" alt="왈라비">
+              </a>
+            </div>
+            <div class="tab-cont">
+              <a href="#">
+                <img src="img/animal/fox.jpg" alt="여우">
+              </a>
+            </div>
+            <div class="tab-cont">
+              <a href="#">
+                <img src="img/animal/parrot.png" alt="앵무새">
+              </a>
+            </div>
+            <div class="tab-cont">
+              <a href="#">
+                <img src="img/animal/rabbit.jpg" alt="토끼">
+              </a>
+            </div>
+            <div class="tab-cont">
+              <a href="#">
+                <img src="img/animal/ferret.jpg" alt="페럿">
+              </a>
+            </div>
+            <div class="tab-cont">
+              <a href="#">
+                <img src="img/animal/prairie_dog.jpg" alt="프레리도그">
+              </a>
+            </div>
+            <div class="tab-cont">
+              <a href="#">
+                <img src="img/animal/gerbil.jpg" alt="저빌">
+              </a>
+            </div>
+            <div class="tab-cont">
+              <a href="#">
+                <img src="img/animal/chinchilla.jpg" alt="친칠라">
+              </a>
+            </div>
+            <div class="tab-cont">
+              <a href="#">
+                <img src="img/animal/Capybara.jpg" alt="카피바라">
+              </a>
+            </div>
+          </div><!--.img-box-->
+
+          <div class="btn-box">
+            <div class="more-btn"><a href="#" class="btn">더 알아보기</a></div>
+            <div class="info-btn"><a href="#" class="btn">분양안내</a></div>
+          </div><!--.btn-box-->
+        </div><!--.inner-->
+      </section><!--#introduce-->
+
+      <section class="section" id="map">
+        <div class="inner">
+          <h2>
+            <span class="tit-color01">오시</span><span class="tit-color02">는</span><span class="tit-color03">길</span>
+          </h2>
+          <ul class="tab-menu2">
+            <li class="on"><a href="#">인천점</a></li>
+            <li><a href="#">대전점</a></li>
+            <li><a href="#">부산점</a></li>
+          </ul>
+
+          <div>
+            <div class="tab-cont2">
+              <div class="txt-box">
+                <h3>
+                  인천 연수구 신송로125번길 13<br>
+                  아크리아1 상가 302호 마리앤쥬
+                </h3>
+                <div class="txt2-box">
+                  <h4><span>오시는길</span></h4>
+                  <span>
+                    - 인천대입구역 1번출구에서 [8번버스]<br>
+                    (하차)풍림아이원2단지
+                  </span>
+                  <span>- 지하주차장 2시간 무료주차권을 드립니다</span>
+                  <span>(1회 1장 사용가능. 초과 30분당 500원)</span>
+                </div><!--.txt2-box-->
+                <div class="time-box">
+                  <span>평일 12:00 ~ 21:00</span>
+                  <span>주말 11:00 ~ 21:00</span>
+                  <span>연중무휴</span>
+                </div><!--.time-box-->
+              </div><!--.txt-box-->
+              <div class="img-box">
+                <img src="img/map_incheon.png" alt="인천점 지도">
+              </div><!--.img-box-->
+              
+            </div>
+            <div class="tab-cont2">
+              <div class="txt-box">
+                <h3>대전 서구 둔지로 15 경희빌딩 4층</h3>
+                <div class="txt2-box">
+                  <h4><span>오시는길</span></h4>
+                  <span>- 갤러리아백화점에서 도보 4분 (갤러리아 뒷편 다이소에서 올리브영 방면으로 직진)</span>
+                  <span>- 정부청사역 4번출구에서 [3, 211, 203]버스탑승 후 [은하수네거리]하차, 도보5분</span>
+                  <span>주차정보 건물 지하 무료주차</span>
+                </div>
+                <div class="time-box">
+                  <span>평일 12:00 ~ 21:00</span>
+                  <span>주말 11:00 ~ 21:00</span>
+                  <span>연중무휴</span>
+                </div><!--.time-box-->
+              </div><!--.txt-box-->
+              <div class="img-box">
+                <img src="img/map_daejeon.png" alt="대전점 지도">
+              </div><!--.img-box-->
+              
+            </div>
+            <div class="tab-cont2">
+              <div class="txt-box">
+                <h3>부산 부산진구 동천로 70 3층</h3>
+                <div class="txt2-box">
+                  <h4><span>오시는길</span></h4>
+                  <span>- 건물 지하주차장 무료이용가능</span>
+                  <span>- 둔산주차타워 이용시 2시간 주차권 구매 1,000원</span>
+                  <span>주차정보 건물 지하 무료주차</span>
+                </div><!--.txt2-box-->
+                <div class="time-box">
+                  <span>평일 12:00 ~ 21:00</span>
+                  <span>주말 11:00 ~ 21:00</span>
+                  <span>연중무휴</span>
+                </div><!--.time-box-->
+              </div><!--.txt-box-->
+              <div class="img-box">
+                <img src="img/map_busan.png" alt="부산점 지도">
+              </div><!--.img-box-->
+              
+            </div>
+          </div>
+        </div><!--.inner-->
+      </section><!--#map-->
+      
+
+      <section class="section" id="story">
+        <div class="inner">
+          <div class="ani-wrap"></div><!--.ani-wrap-->
+          <div class="tab-cont3">
+            <div class="f-wrap">
+             <div class="left">
+              <ul class="tab-menu3">
+                <li class="open on"><a href="#"><h2>일상 이야기</h2></a></li>
+                <li><a href="#"><h2>동물 수업</h2></a></li>
+              </ul><!--.tab-menu3-->
+              <div class="box1">
+                <a href="#" class="txt-box">
+                  <p>
+                    ‘좋은’ 동물들과<br>
+                    ‘좋은’ 사람들을<br>
+                    위한 일상 이야기
+                  </p>
+                </a><!--.txt-box-->
+                <div class="img-box">
+                  <img src="img/story_img01.jpg" alt="미어캣 이미지">
+                </div><!--.img-box-->
+              </div><!--.box1-->
+              <div class="box2">
+                <div class="img-box">
+                  <img src="img/story_img02.jpg" alt="강아지 이미지">
+                </div><!--.img-box-->
+                <p>포옹은, 동물과 아이들 모두를 생각합니다.</p>
+              </div><!--.box2-->
+            </div><!--.left-->
+            <div class="right">
+              <div class="box3">
+                <div class="img-box">
+                  <img src="img/story_img03.jpeg" alt="앵무새 이미지">
+                </div><!--.img-box-->
+              </div><!--.box3-->
+              <div class="box4">
+                <div class="img-box">
+                  <img src="img/story_img04.jpg" alt="고슴도치 이미지">
+                </div><!--.img-box-->
+              </div><!--.box4-->
+            </div><!--.right-->
+            </div><!--.f-wrap-->
+          </div><!--.tab-cont3-->
+
+          <div class="tab-cont3">
+            <div class="f-wrap">
+             <div class="left">
+              <ul class="tab-menu3">
+                <li><a href="#"><h2>일상 이야기</h2></a></li>
+                <li class="open"><a href="#"><h2>동물 수업</h2></a></li>
+              </ul><!--.tab-menu3-->
+              <div class="box1">
+                <a href="#" class="txt-box">
+                  <p>
+                    스스로 생각하고<br>
+                    알아갈 수 있도록 <br>
+                    배려하는 방법
+                  </p>
+                </a><!--.txt-box-->
+                <div class="img-box">
+                  <img src="img/story_img05.jpg" alt="미어캣 이미지">
+                </div><!--.img-box-->
+              </div><!--.box1-->
+              <div class="box2">
+                <div class="img-box">
+                  <img src="img/story_img02.jpg" alt="강아지 이미지">
+                </div><!--.img-box-->
+                <p>포옹은, 동물과 아이들 모두를 생각합니다.</p>
+              </div><!--.box2-->
+            </div><!--.left-->
+            <div class="right">
+              <div class="box3">
+                <div class="img-box">
+                  <img src="img/story_img06.jpeg" alt="앵무새 이미지">
+                </div><!--.img-box-->
+              </div><!--.box3-->
+              <div class="box4">
+                <div class="img-box">
+                  <img src="img/story_img07.jpg" alt="고슴도치 이미지">
+                </div><!--.img-box-->
+              </div><!--.box4-->
+            </div><!--.right-->
+            </div><!--.f-wrap-->
+          </div><!--.tab-cont3-->
+
+        </div><!--.inner-->
+      </section><!--#story-->
+      
+
+      <section class="section" id="inform">
+        <div class="inner">
+          <div class="inform-top">
+            <div class="notice">
+              <h2>
+                <span class="tit-color01">공지</span><span class="tit-color02">사</span><span class="tit-color03">항</span>
+              </h2>
+              <a href="#" class="more">더보기</a>
+              <ul>
+                <li>
+                  <a href="#">
+                    <div>공지사항이 들어가는 자리 공지사항이 들어가는 자리 공지사항이 들어가는 자리</div>
+                    <div>20xx-xx-xx</div><!--.date-->
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div>공지사항이 들어가는 자리 공지사항이 들어가는 자리 공지사항이 들어가는 자리</div>
+                    <div>20xx-xx-xx</div><!--.date-->
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div>공지사항이 들어가는 자리 공지사항이 들어가는 자리 공지사항이 들어가는 자리</div>
+                    <div>20xx-xx-xx</div><!--.date-->
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div>공지사항이 들어가는 자리 공지사항이 들어가는 자리 공지사항이 들어가는 자리</div>
+                    <div>20xx-xx-xx</div><!--.date-->
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div>공지사항이 들어가는 자리 공지사항이 들어가는 자리 공지사항이 들어가는 자리</div>
+                    <div>20xx-xx-xx</div><!--.date-->
+                  </a>
+                </li>
+              </ul>
+            </div><!--.notice-->
+  
+            <div class="qna">
+              <h2>
+                <span class="tit-color01">Q</span><span class="tit-color02">&</span><span class="tit-color03">A</span>
+              </h2>
+              <a href="#" class="more">더보기</a>
+              <ul>
+                <li>
+                  <a href="#">
+                    <div>Q&A가 들어가는 자리 Q&A가 들어가는 자리 Q&A가 들어가는 자리</div>
+                    <div>20xx-xx-xx</div><!--.date-->
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div>Q&A가 들어가는 자리 Q&A가 들어가는 자리 Q&A가 들어가는 자리</div>
+                    <div>20xx-xx-xx</div><!--.date-->
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div>Q&A가 들어가는 자리 Q&A가 들어가는 자리 Q&A가 들어가는 자리</div>
+                    <div>20xx-xx-xx</div><!--.date-->
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div>Q&A가 들어가는 자리 Q&A가 들어가는 자리 Q&A가 들어가는 자리</div>
+                    <div>20xx-xx-xx</div><!--.date-->
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div>Q&A가 들어가는 자리 Q&A가 들어가는 자리 Q&A가 들어가는 자리</div>
+                    <div>20xx-xx-xx</div><!--.date-->
+                  </a>
+                </li>
+              </ul>
+            </div><!--.QnA-->
+          </div><!--.inform-top-->
+
+          <div class="sns">
+            <div class="swiper snsSwiper">
+              <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                  <a href="#">
+                    <img src="img/SNS01.jpeg" alt="sns 이미지">
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#">
+                    <img src="img/SNS02.jpeg" alt="sns 이미지">
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#">
+                    <img src="img/SNS03.jpeg" alt="sns 이미지">
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#">
+                    <img src="img/SNS04.jpg" alt="sns 이미지">
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#">
+                    <img src="img/SNS05.jpeg" alt="sns 이미지">
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#">
+                    <img src="img/SNS01.jpeg" alt="sns 이미지">
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#">
+                    <img src="img/SNS02.jpeg" alt="sns 이미지">
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#">
+                    <img src="img/SNS03.jpeg" alt="sns 이미지">
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#">
+                    <img src="img/SNS04.jpg" alt="sns 이미지">
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#">
+                    <img src="img/SNS05.jpeg" alt="sns 이미지">
+                  </a>
+                </li>
+              </ul><!--.swiper-wrapper-->
+            </div><!--.swiper-->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div><!--.sns-->
+        </div><!--.inner-->
+      </section><!--#inform-->
+
+      <footer class="section fp-auto-height">
+        <div class="inner">
+          <div class="f-txt">
+            <div>
+              <span>상호 :마리앤쥬(Zoo)</span>
+              <span>대표 : 시성식</span>
+              <span>주소 : 인천시 연수구 송도동3-6 아크리아1상가 302호</span>
+            </div>
+            <div>
+              <span>사업자등록번호 : 176-10-00854</span>
+              <span>전화번호 : 010-5539-0218</span>
+            </div>
+            <div>
+              <span>기타 : OPEN : 11:00 - CLOSE : 21:00</span>
+              <span><a href="#">이용약관</a></span>
+              <span><a href="#">신고하기</a></span>
+            </div>
+          </div><!--.f-txt-->
+        </div><!--.inner-->
+      </footer>
+
+    </section><!--#fullpage-->
+
+    <nav class="snb">
+      <ul>
+        <li class="go_top">
+          <a href="#visual">TOP</a>
+        </li>
+        <li class="snb-icon snb-icon1">
+          <a href="#"><span>전화하기</span></a>
+        </li>
+        <li class="snb-icon snb-icon2">
+          <a href="#"><span>오시는길</span></a>
+        </li>
+        <li class="snb-icon snb-icon3">
+          <a href="#"><span>Facebook</span></a>
+        </li>
+        <li class="snb-icon snb-icon4">
+          <a href="#"><span>Instagram</span></a>
+        </li>        
+        <li class="snb-btn">
+          <a href="#" class="hidden">여닫기버튼</a>
+        </li>        
+      </ul>
+    </nav>
+
+    <div class="bg">
+      <div class="br"><img src="img/bg_round.png" alt="배경원"></div>
+      <div class="sr"><img src="img/bg_round.png" alt="배경원"></div>
+    </div><!--.bg-->
+
+  </div><!--#wrap-->
 </body>
 </html>
