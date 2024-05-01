@@ -189,7 +189,7 @@ header .inner > h1 img:nth-of-type(2){width: 168px; height: 40px; position: abso
 
 
 /*footer 시작*/
-footer{background-color: #697077; background-image: url(../img/f-logo.png); background-repeat: no-repeat; background-position: 10% 33px;}
+footer{background-color: #697077; background-image: url(../img/f-logo.png); background-repeat: no-repeat; background-position: center}
 
 footer .inner{height: 166px; position: relative;}
 footer .f-txt{position: absolute; top: 35px; left: 50%; transform: translateX(-50%); width: 300px;}
@@ -332,9 +332,12 @@ footer .f-txt span:hover a{text-decoration: underline;}
   #inform .sns .swiper-button-prev:hover{transform: scale(1);}
 
 
+  footer{background-position: 10% 33px;}
   footer .f-txt{width: 600px;}
   footer .f-txt span{font-size: 12px; margin-right: 40px;}
   footer .f-txt span:last-child{margin-right: 0;}
+
+
   .snb{display: block; position: fixed; right: 3%; bottom: 3%; animation: FadeUp 2s 3s backwards;}
   .snb ul li{margin-bottom: 15px; display: flex; justify-content: right;}
   .snb ul li a{display: flex; height: 60px; border-radius: 30px; line-height: 60px; min-width: 60px; padding: 0 15px;}
