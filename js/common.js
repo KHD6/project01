@@ -46,7 +46,7 @@ $(document).ready(function(){//시작
   //이미지 탭기능(Mobile)
   var swiper = new Swiper(".txt-Swiper", {
     loop: true,
-    slidesPerView: 3.2,
+    slidesPerView: 3,
     freeMode: true,
     watchSlidesProgress: true,
   });
@@ -54,7 +54,7 @@ $(document).ready(function(){//시작
     loop: true,
     spaceBetween: 10,
     autoplay: {
-      delay: 3000,
+      delay: 5000,
       disableOnInteraction: false,
      },
     thumbs: {
