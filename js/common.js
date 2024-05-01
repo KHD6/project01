@@ -147,13 +147,13 @@ $(document).ready(function(){//시작
 
   $(".snb-btn").click(function(){
     if($(".snb-icon").css("display")=="none"){
-      $(this).addClass("rotate");
+      $("a",this).addClass("rotate");
       $(".snb-icon1").stop().delay().slideDown(100);
       $(".snb-icon2").stop().delay(50).slideDown(100);
       $(".snb-icon3").stop().delay(100).slideDown(100);
       $(".snb-icon4").stop().delay(150).slideDown(100);
     }else{
-      $(this).removeClass("rotate");
+      $("a",this).removeClass("rotate");
       $(".snb-icon1").stop().delay(150).slideUp(100);
       $(".snb-icon2").stop().delay(100).slideUp(100);
       $(".snb-icon3").stop().delay(50).slideUp(100);

@@ -357,8 +357,7 @@ footer .f-txt span:hover a{text-decoration: underline;}
   .snb ul li a span{color: #fff; font-size: 20px; overflow: hidden; text-align: right; width: 0; transition: all 0.3s; transform-origin: right;}
   .snb ul li:hover a span{width: 140px;}
   .go_top a{width: 60px; justify-content: center; line-height: 60px; color: #fff; font-size: 20px; background: #81BF25; background: url(../img/icon/snb-05.png)no-repeat center 5px, #81BF25;}
-  .snb-btn{transition: all 0.3s;}
-  .snb-btn a{width: 60px; justify-content: center; line-height: 60px; font-size: 20px; background: url(../img/Add_round.png) no-repeat center / 50px, #81BF25;}
+  .snb-btn a{width: 60px; justify-content: center; line-height: 60px; font-size: 20px; background: url(../img/Add_round.png) no-repeat center / 50px, #81BF25; transition: all 0.3s;}
 
 
   .rotate{transform: rotate(45deg);}
