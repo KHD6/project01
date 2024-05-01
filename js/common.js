@@ -5,6 +5,7 @@ $(document).ready(function(){//시작
 		//options here
 		autoScrolling:true,
 		scrollHorizontally: true,
+    scrollOverflow: true,
 	});
 
   //.btn-open 클릭시 .m-wrap 이 내려옴
