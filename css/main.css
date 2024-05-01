@@ -115,13 +115,13 @@ header .inner > h1 img:nth-of-type(2){width: 168px; height: 40px; position: abso
 #map.active ul.tab-menu2 li:nth-child(1){animation: FadeUp 1s 1s backwards;}
 #map.active ul.tab-menu2 li:nth-child(2){animation: FadeUp 1s 1.2s backwards;}
 #map.active ul.tab-menu2 li:nth-child(3){animation: FadeUp 1s 1.4s backwards;}
-#map .txt-box{height: 260px; margin-bottom: 10px;}
+#map .txt-box{height: 300px; margin-bottom: 30px;}
 #map .txt-box .time-box{display: flex; flex-wrap: wrap;}
 #map .txt-box .time-box span{display: block; font-size: 16px; margin-right: 50px;}
 #map .txt-box h3{font-size: 25px; height: 68px; margin-bottom: 15px;}
-#map .txt-box .txt2-box h4{margin-bottom: 5px;}
+#map .txt-box .txt2-box h4{margin-bottom: 10px;}
 
-#map .txt-box .txt2-box span{display: block; font-size: 16px; margin-bottom: 5px;}
+#map .txt-box .txt2-box span{display: block; font-size: 16px; margin-bottom: 10px;}
 #map .img-box{margin-bottom: 200px;}
 #map .img-box img{width: 100%;}
 
