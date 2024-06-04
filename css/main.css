@@ -80,7 +80,8 @@ header .inner > h1 img:nth-of-type(2){width: 168px; height: 40px; position: abso
 #introduce .txt-Swiper::before{content: ""; display: block; height: 2px; background-color: #3a4364; margin-bottom: 20px;}
 #introduce .txt-Swiper::after{content: ""; display: block; height: 2px; background-color: #3a4364; margin: 20px 0 20px;}
 #introduce .txt-Swiper ul li{text-align: center; border: 2px solid #81BF25; background-color: #fff; border-radius: 22px; padding: 5px 10px; }
-#introduce .txt-Swiper ul li:hover{color: #fff; background-color: #81BF25;}
+#introduce .txt-Swiper ul li:hover{background-color: #81BF25;}
+#introduce .txt-Swiper ul li:hover a{color: #fff;}
 #introduce .txt-Swiper ul li a{font-size: 14px; color: #81BF25;transition: all 0.3s;}
 
 #introduce .txt-Swiper ul li.swiper-slide-thumb-active {background-color: #81BF25;}
